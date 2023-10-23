@@ -142,7 +142,7 @@ Gibbs = function(Y = NULL, Yi = NULL, X, c, groupID, grid = NULL, n.grid = 100, 
     zij[dij == 1] = sapply(u[dij == 1], function(x) {rtruncnorm(1, 0, Inf, x, 1)})
 
     #gam0 posterior
-    W0 = v0 + N; E0 = (v0 * m0 + sum(unlist(zij) - t(I) %*% gam - X %*% theta) - eta) / W0
+    W0 = v0 + N; E0 = (v0 * m0 + sum(unlist(zij) - t(I) %*% gam - X %*% theta)) / W0
     gam0 = rnorm(1, E0, sqrt(1 / W0))
 
     #gam posterior
