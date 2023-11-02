@@ -16,16 +16,27 @@ devtools::install_github("jihyunk1114/bayesurv")
 
 ## Arguments
 Y: individual status by group test result (length: sample size)
+
 Yi: group status (length: number of groups)
+
 X: covariates in matrix form
+
 c: test time
+
 grid: can define grid and find corresponding baseline survival function
+
 theta0, Sigma0, m0, v0, a0, b0: For priors
+
 alpha: Sensitivity
+
 beta: Specificity
+
 order: order for knots (usually 2 or 3)
+
 knots: If NULL default, can set up own knots
+
 maxiter: maximum interation number
+
 burn.in: burn-in number
 
 ## Example
