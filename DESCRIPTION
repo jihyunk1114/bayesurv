@@ -1,24 +1,10 @@
 Package: bayesurv
-Title: Gibbs sampler for group-tested data with misspecification
+Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
 Authors@R: 
-    person("Jihyun", "Kim", , "jihyunk@email.sc.edu", role = c("aut", "cre"),
+    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description:
-#Y: individual status by group test result (length: sample size)
-#Yi: group status (length: number of groups)
-#X: covariates in matrix form
-#c: test time
-#grid: can define grid and find corresponding baseline survival function
-#theta0, Sigma0, m0, v0, a0, b0: For priors
-#alpha: Sensitivity
-#beta: Specificity
-#order: order for knots (usually 2 or 3)
-#knots: If NULL default, can set up own knots
-#maxiter: maximum interation number
-#burn.in: burn-in number
-#make a note that k will be redefined when knots are specified.
-#warning if both Y and Yi not provided
+Description: What the package does (one paragraph).
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8
